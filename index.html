@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      height: 748px;
+      width:748px;
+      display:grid;
+      background-color: #000;
+      gap: 9px;
+      grid-template-rows:  414px 130px 155px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-auto-rows: 20px;
+    }
+    .red{
+      background-color: red;
+      grid-row-start: 1;
+      grid-column: 1/2;
+    }
+    .white1{
+        background-color: #F0F1EC;
+        grid-row-start: 1;
+        grid-column: 2/5; 
+    }
+    .white2{
+      background-color: pink;
+      grid-row: 2/4;
+      grid-column: 1/2;
+    }
+    .white3{
+      background-color: skyblue;
+      grid-row: 2/4;
+      grid-column: 2/4;
+    }
+    .blue{
+      background-color: blue;
+      grid-area: 2/4/3/5;
+      border-bottom: 10px solid black;
+    }
+    .whitevertical{
+      background-color: burlywood;
+      grid-area:3/4/5/5;
+    }
+    .whitehorizontal{
+      background-color: aqua;
+      grid-column: 1/2;
+    }
+    .yellow{
+      background-color: yellow;
+      grid-area:4/2/5/3;
+    }
+    .darkgreen{
+      background-color: darkgreen;
+      grid-area: 4/3/5/4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+
+    <div class="item blue"></div>
+    <div class="item whitevertical"></div>
+
+    <div class="item whitehorizontal"></div>
+    <div class="item yellow"></div>
+    <div class="item darkgreen"></div>
+
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
